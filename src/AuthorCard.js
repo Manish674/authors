@@ -13,7 +13,7 @@ const AuthorCard = ({ name, birth_date, work_count, top_work }) => {
         <h3>{name}</h3>
         <IoIosArrowDown
           style={{
-            transform: `rotate(${display ? "0" : "180"}deg)`,
+            transform: `rotate(${display ? "180" : "0"}deg)`,
           }}
           className={styles.icon}
         />
