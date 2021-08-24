@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.styledForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input {
+  padding: 0.8rem;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid black;
+}
+
+.dropdownContainer {
+  cursor: pointer;
+  padding: 1rem;
+  width: 80%;
+  margin-top: 1rem;
+  background: #fff1f1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.information {
+  margin-top: 1rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infolist {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  height: 50vh;
+  width: 80%;
+  overflow-y: scroll;
+}
