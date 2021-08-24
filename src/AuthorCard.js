@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./app.module.css";
+import { IoIosArrowDown } from "react-icons/io";
 
 const AuthorCard = ({ name, birth_date, work_count, top_work }) => {
   const [display, setDisplay] = useState(false);
@@ -8,7 +9,15 @@ const AuthorCard = ({ name, birth_date, work_count, top_work }) => {
       className={styles.dropdownContainer}
       onClick={() => setDisplay(!display)}
     >
-      <h3>{name}</h3>
+      <div className={styles.header}>
+        <h3>{name}</h3>
+        <IoIosArrowDown
+          style={{
+            transform: `rotate(${display ? "0" : "180"}deg)`,
+          }}
+          className={styles.icon}
+        />
+      </div>
       <div
         className={styles.information}
         style={{ display: `${display ? "block" : "none"}` }}

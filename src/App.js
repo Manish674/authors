@@ -18,6 +18,7 @@ const App = () => {
   console.log(authorList);
   return (
     <div className={styles.container}>
+      <h3 className={styles.Heading}>BOOK WORLD</h3>
       <form className={styles.styledForm} onSubmit={(e) => handleOnSubmit(e)}>
         <input
           value={author}
